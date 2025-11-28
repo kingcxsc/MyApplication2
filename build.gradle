@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google() // 谷歌仓库
+        mavenCentral() // 中央仓库
+        // jcenter() // 可选，已停止维护
+    }
+    dependencies {
+        // 注意：AGP版本要和Gradle版本匹配（如Gradle 6.7.1对应AGP 4.2.2）
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        // 如有其他依赖（如kotlin），继续添加
+        // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // jcenter() // 可选
+        // 其他仓库（如jitpack）
+        // maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
