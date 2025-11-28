@@ -1,5 +1,6 @@
 
 apply plugin: 'com.android.library'
+apply plugin:  'maven-publish' // 核心：添加这个插件
 
 android {
     compileSdkVersion 33
