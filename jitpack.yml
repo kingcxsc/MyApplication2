@@ -1,5 +1,2 @@
 jdk:
   - openjdk11
-build:
-  script:
-    - ./gradlew clean -Pgroup=com.github.kingcxsc -Pversion=v1.0.4 -xtest :mylibrary:publishToMavenLocal
