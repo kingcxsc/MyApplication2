@@ -1,4 +1,4 @@
 
-rootProject.name = "My Application"
+rootProject.name = "MyApplication"
 include ':app'
 include ':mylibrary'
